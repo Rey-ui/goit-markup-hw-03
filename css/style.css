@@ -1,0 +1,247 @@
+:root {
+    --color--titles: #2E2F42;
+    --color--text: #434455;
+    --c--brend: #4D5AE5;
+}
+
+/*00000000000000000000000000000000000000*/
+body {
+    line-height: 1;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    color: var(--color--text);
+}
+
+button {
+    cursor: pointer;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+/*--------------------------------------*/
+.header {}
+
+.header__menu {}
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em
+}
+
+.logo span {
+    color: #2e2f42;
+}
+
+.header__link {
+    color: #4d5ae5;
+    text-transform: uppercase;
+}
+
+.header__list {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em
+}
+
+.header__adress {}
+
+.header__contacs {}
+
+.list-header__item:hover {}
+
+.list-header__item:focus {}
+
+.list-header__link {
+    color: var(--color--titles);
+}
+
+.list-header__link:hover {
+    color: #404bbf;
+}
+
+.list-header__link:focus {
+    color: #404bbf;
+}
+
+.contact {}
+
+address {
+    font-style: normal;
+}
+
+.header__contact {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color--text);
+}
+
+.header__contact:hover,
+.header__contact:focus {
+    color: #404bbf;
+
+}
+
+/*=====================================*/
+.content__hero {
+    background-color: #2E2F42;
+}
+
+.content-hero__title {
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+}
+
+.content-hero__button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: #4D5AE5;
+    font-size: 16px;
+    color: #fff;
+}
+
+.content-hero__button:hover {
+    background-color: #404BBF;
+}
+
+.content-hero__button:focus {
+    background-color: #404BBF;
+}
+
+/*=====================================*/
+.content__advantages {}
+
+.advantages-conten__title {}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: var(--color--titles);
+}
+
+.advantages-conten__items {}
+
+.items-content__item {}
+
+.items-content__label {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--color--titles);
+}
+
+.items-content__text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/*=====================================*/
+.content__team {
+    background-color: #F4F4FD;
+}
+
+.team-content {}
+
+.team-content__title {}
+
+.team-content__items {}
+
+.team-content-items__item {
+    background-color: #FFFFFF;
+}
+
+.team-content-items__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--color--titles);
+}
+
+.team-content-items__text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/*=====================================*/
+.content__portfolio {}
+
+.portfolio-content__title {}
+
+.portfolio-content__items {}
+
+.portfolio-items__item {}
+
+.item-portfolio__image {}
+
+.item-portfolio__description {}
+
+.item-portfolio__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--color--titles);
+}
+
+.item-portfolio__subtitel {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/*=====================================*/
+.footer {
+    background-color: #2E2F42;
+}
+
+.footer__link {
+    text-transform: uppercase;
+    color: #4d5ae5;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.footer__link span {
+    color: #f4f4fd;
+}
+
+.footer__text {
+    color: #F4F4FD;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/*=====================================*/
