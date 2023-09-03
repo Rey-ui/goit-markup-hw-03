@@ -5,12 +5,27 @@
 }
 
 /*00000000000000000000000000000000000000*/
+/** {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+*/
 body {
+    height: 100%;
     line-height: 1;
     font-size: 14px;
     font-family: "Roboto", sans-serif;
     background-color: #fff;
     color: var(--color--text);
+    /*max-width: 1128px;
+    margin: 0 auto;*/
 }
 
 button {
@@ -30,7 +45,7 @@ ul li {
     list-style: none;
 }
 
-/*--------------------------------------*/
+/*--------------0--header----------------------*/
 .header {}
 
 .header__menu {}
@@ -98,7 +113,7 @@ address {
 
 }
 
-/*=====================================*/
+/*=================1==hero==================*/
 .content__hero {
     background-color: #2E2F42;
 }
@@ -131,12 +146,13 @@ address {
     background-color: #404BBF;
 }
 
-/*=====================================*/
+/*=================2==advantages==================*/
 .content__advantages {}
 
 .advantages-conten__title {}
 
 .title {
+    /*margin-bottom: 72px;*/
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -164,7 +180,7 @@ address {
     letter-spacing: 0.02em;
 }
 
-/*=====================================*/
+/*=================3==team==================*/
 .content__team {
     background-color: #F4F4FD;
 }
@@ -173,10 +189,14 @@ address {
 
 .team-content__title {}
 
-.team-content__items {}
+.team-content__items {
+    /*  display: flex;
+    column-gap: 24px;*/
+}
 
 .team-content-items__item {
     background-color: #FFFFFF;
+    /*margin-bottom: 30px;*/
 }
 
 .team-content-items__title {
@@ -193,12 +213,17 @@ address {
     letter-spacing: 0.02em;
 }
 
-/*=====================================*/
+/*================4==portfolio===================*/
 .content__portfolio {}
 
 .portfolio-content__title {}
 
-.portfolio-content__items {}
+.portfolio-content__items {
+    /*display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;*/
+}
 
 .portfolio-items__item {}
 
@@ -220,7 +245,7 @@ address {
     letter-spacing: 0.02em;
 }
 
-/*=====================================*/
+/*================5==footer===================*/
 .footer {
     background-color: #2E2F42;
 }
@@ -244,4 +269,4 @@ address {
     letter-spacing: 0.02em;
 }
 
-/*=====================================*/
+/*==================end===================*/
