@@ -18,7 +18,7 @@
 }
 */
 body {
-    height: 100%;
+    min-height: 100%;
     line-height: 1;
     font-size: 14px;
     font-family: "Roboto", sans-serif;
@@ -26,6 +26,8 @@ body {
     color: var(--color--text);
     /*max-width: 1128px;
     margin: 0 auto;*/
+    display: flex;
+    flex-direction: column;
 }
 
 button {
@@ -74,9 +76,25 @@ img {
 }
 
 /*--------------0--header----------------------*/
-.header {}
+.header {
+    padding: 25px 0;
+    border-bottom: 1px solid #E7E9FC;
+}
 
-.header__menu {}
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    column-gap: 76px;
+    flex-wrap: wrap;
+}
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -96,6 +114,9 @@ img {
 }
 
 .header__list {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -104,11 +125,16 @@ img {
 
 .header__adress {}
 
-.header__contacs {}
+.header__contacs {
+    display: flex;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-.list-header__item:hover {}
+.list-header__item {}
 
-.list-header__item:focus {}
+.list-header__item {}
 
 .list-header__link {
     color: var(--color--titles);
@@ -142,8 +168,24 @@ address {
 }
 
 /*=================1==hero==================*/
+.content {
+    flex: 1 1 auto;
+}
+
+.section {
+    padding: 120px 0;
+}
+
 .content__hero {
     background-color: #2E2F42;
+    padding: 188px 0;
+}
+
+.hero__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .content-hero__title {
@@ -159,6 +201,9 @@ address {
 }
 
 .content-hero__button {
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     line-height: 1.5;
@@ -179,10 +224,10 @@ address {
 /*=================2==advantages==================*/
 .content__advantages {}
 
-.advantages-conten__title {}
+.advantages-content__title {}
 
 .title {
-    /*margin-bottom: 72px;*/
+    margin-bottom: 72px;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -192,7 +237,10 @@ address {
     color: var(--color--titles);
 }
 
-.advantages-conten__items {}
+.advantages-content__items {
+    display: flex;
+    column-gap: 24px;
+}
 
 .items-content__item {}
 
@@ -202,6 +250,7 @@ address {
     line-height: 1.2;
     letter-spacing: 0.4px;
     color: var(--color--titles);
+    margin-bottom: 8px;
 }
 
 .items-content__text {
@@ -220,8 +269,8 @@ address {
 .team-content__title {}
 
 .team-content__items {
-    /*  display: flex;
-    column-gap: 24px;*/
+    display: flex;
+    column-gap: 24px;
 }
 
 .team-content-items__item {
@@ -229,7 +278,13 @@ address {
     /*margin-bottom: 30px;*/
 }
 
+.team-content-items__block {
+    padding: 32px 16px;
+    text-align: center;
+}
+
 .team-content-items__title {
+    margin-bottom: 8px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -249,17 +304,21 @@ address {
 .portfolio-content__title {}
 
 .portfolio-content__items {
-    /*display: flex;
+    display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
-    column-gap: 24px;*/
+    column-gap: 24px;
 }
 
-.portfolio-items__item {}
+.portfolio-items__item {
+    border: 1px solid #E7E9FC;
+}
 
 .item-portfolio__image {}
 
-.item-portfolio__description {}
+.item-portfolio__description {
+    padding: 32px 16px;
+}
 
 .item-portfolio__title {
     font-size: 20px;
@@ -267,6 +326,7 @@ address {
     line-height: 1.2;
     letter-spacing: 0.4px;
     color: var(--color--titles);
+    margin-bottom: 8px;
 }
 
 .item-portfolio__subtitel {
@@ -278,15 +338,19 @@ address {
 /*================5==footer===================*/
 .footer {
     background-color: #2E2F42;
+    flex: 0 1 auto;
+    padding: 100px 0;
 }
 
 .footer__link {
+    display: block;
     text-transform: uppercase;
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-bottom: 18px;
 }
 
 .footer__link span {
@@ -297,6 +361,7 @@ address {
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
 
 /*==================end===================*/
