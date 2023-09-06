@@ -67,6 +67,7 @@ p {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 .container {
@@ -77,7 +78,6 @@ img {
 
 /*--------------0--header----------------------*/
 .header {
-    padding: 25px 0;
     border-bottom: 1px solid #E7E9FC;
 }
 
@@ -92,6 +92,7 @@ img {
 .header__menu {
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: 76px;
     flex-wrap: wrap;
 }
@@ -111,6 +112,11 @@ img {
 .header__link {
     color: #4d5ae5;
     text-transform: uppercase;
+}
+
+.list-header__link {
+    display: inline-block;
+    padding: 25px 0;
 }
 
 .header__list {
@@ -308,15 +314,24 @@ address {
 .portfolio-content__items {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px;
-    column-gap: 24px;
+    gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-items__item {
+
+    width: calc((100% - 48px) / 3)
+}
+
+.container__li {
     border: 1px solid #E7E9FC;
 }
 
-.item-portfolio__image {}
+.container__li img {
+    width: 100%;
+}
+
+.item-portfolio__image img {}
 
 .item-portfolio__description {
     padding: 32px 16px;
