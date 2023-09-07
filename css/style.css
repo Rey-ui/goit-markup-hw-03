@@ -195,7 +195,6 @@ address {
 }
 
 .content-hero__title {
-    max-width: 496px;
     text-transform: capitalize;
     text-align: center;
     color: #fff;
@@ -204,12 +203,14 @@ address {
     line-height: 1.07;
     letter-spacing: 1.12px;
     margin-bottom: 48px;
+    max-width: 496px;
 }
 
 .content-hero__button {
+    display: block;
     border: none;
     border-radius: 4px;
-    padding: 16px 32px;
+    /*padding: 16px 32px;*/
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     line-height: 1.5;
@@ -217,6 +218,8 @@ address {
     background-color: #4D5AE5;
     font-size: 16px;
     color: #fff;
+    min-width: 169px;
+    height: 56px
 }
 
 .content-hero__button:hover {
@@ -243,12 +246,27 @@ address {
     color: var(--color--titles);
 }
 
-.advantages-content__items {
-    display: flex;
-    column-gap: 24px;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
-.items-content__item {}
+.advantages-content__items {
+    display: flex;
+    gap: 24px;
+}
+
+.items-content__item {
+    width: calc((100% - 72px) / 4);
+}
 
 .items-content__label {
     font-size: 20px;
@@ -276,16 +294,18 @@ address {
 
 .team-content__items {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 
 .team-content-items__item {
+    border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
+
     /*margin-bottom: 30px;*/
 }
 
 .team-content-items__block {
-    padding: 32px 16px;
+    padding: 32px 0;
     text-align: center;
 }
 
@@ -305,11 +325,11 @@ address {
 }
 
 /*================4==portfolio===================*/
-.content__portfolio {}
-
-.portfolio__container {
+.content__portfolio {
     border: 1px solid #e7e9fc;
 }
+
+.portfolio__container {}
 
 .portfolio-content__title {}
 
@@ -321,7 +341,6 @@ address {
 }
 
 .portfolio-items__item {
-    border: 1px solid #E7E9FC;
     width: calc((100% - 48px) / 3)
 }
 
