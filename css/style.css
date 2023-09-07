@@ -325,11 +325,11 @@ address {
 }
 
 /*================4==portfolio===================*/
-.content__portfolio {
+.content__portfolio {}
+
+.portfolio__container {
     border: 1px solid #e7e9fc;
 }
-
-.portfolio__container {}
 
 .portfolio-content__title {}
 
